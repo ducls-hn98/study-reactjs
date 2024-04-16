@@ -16,7 +16,7 @@ export default function Article({
 
   if (tags.length > 0) {
     listTag = tags.map((tag) => (
-      <li className="article__tag">
+      <li className="article__tag" key={tag}>
         <Tag value={tag}></Tag>
       </li>
     ));
